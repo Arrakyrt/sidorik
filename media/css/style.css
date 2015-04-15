@@ -1,0 +1,84 @@
+*{
+	padding:0;
+	margin: 0;
+}
+header{
+	height: 200px;
+	background: url("../img/fon.jpg");
+}
+.logo{
+	height: 200px;
+	float: left;
+	padding-left: 0 0 0 5px;
+}
+#headlinks{
+	float: right;
+	padding: 20px;
+}
+
+.topMenu{
+	display: -moz-box;
+	display: -webkit-flex;
+	display: flex;
+	text-align: center;
+	flex-direction: row;
+	width: 100%;
+	margin: 0 auto;
+}
+.topMenu a{
+	display: block;
+	-moz-box-flex: 1;
+	-webkit-flex: 1;
+	flex: 1;
+	font-size: 14px;
+	padding: 10px;
+	color: white;
+	background: #555;
+	text-decoration: none;
+	border-right: 1px solid white;
+}
+.topMenu a:hover{
+	background: #888;
+	color: #ccc;
+}
+
+h2{
+	text-align: center;
+}
+.col-md-2 ul{
+	list-style-type: none;
+}
+.col-md-2 .btn{
+	width: 100%;
+	margin-top: 2px;
+}
+
+footer{
+	text-align: center;
+	background: #999;
+	padding: 40px 0px;
+}
+footer a{
+	color: white;
+}
+.gallery{
+	display: inline-block;
+	vertical-align: top;
+	width: 220px;
+	padding: 10px;
+	border: solid 1px black;
+	margin: 10px;
+	box-shadow: 2px 2px 2px black;
+	border-radius: 6px;
+}
+@media screen and (max-width: 768px){
+.logo{
+	display: none;
+}
+header{
+	height: 100px;
+}
+.topMenu{
+	flex-direction: column;
+}
+}
